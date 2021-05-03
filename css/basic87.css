@@ -1,8 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-header{
+
+header {
     width: 100%;
     height: 100px;
     background-color: rgba(0, 0, 0, 0.651);
@@ -10,14 +11,17 @@ header{
     /* padding-left: 275px; */
     padding-top: 20px;
 }
-header h1{
-    padding-left:200px;
+
+header h1 {
+    padding-left: 200px;
 }
-header p{
+
+header p {
     /* padding-top: 50px; */
     padding-left: 200px;
 }
-.nav{
+
+.nav {
     width: 567px;
     height: 20px;
     padding-top: 10px;
@@ -27,28 +31,31 @@ header p{
     top: -46px;
     left: 761px;
 }
-.nav ul li{
+
+.nav ul li {
     list-style: none;
     display: inline-block;
     margin-left: 20px;
 }
-.container{
+
+.container {
     margin: auto;
     width: 1000px;
-    overflow:auto;
-
+    overflow: auto;
 }
-.small_box{
+
+.small_box {
     width: 630px;
     float: left;
 }
-.img{
+
+.img {
     margin-top: 30px;
 }
 
-.rect{
+.rect {
     width: 215px;
-    float:left;
+    float: left;
     margin-left: 20px;
     height: 345px;
     background-color: rgb(189, 185, 185);
@@ -57,11 +64,12 @@ header p{
     text-align: center;
     color: gray;
 }
-.rect img{
-    padding: -2px;
 
+.rect img {
+    padding: -2px;
 }
-.para{
+
+.para {
     font-size: 20px;
     margin-top: 20px;
     padding: 0 0 20px 0;
@@ -70,60 +78,154 @@ header p{
     color: gray;
     line-height: 160%;
 }
-.square{
+
+.square {
     float: left;
-    width:180px;
+    width: 180px;
     /* margin-left: 20px; */
 }
-.text{
-    width:400px;
+
+.text {
+    width: 400px;
     color: gray;
 }
-.small_box{
+
+.small_box {
     float: left;
     width: 70%;
     color: gray;
 }
 
-.categories{
+.categories {
     float: left;
     width: 30%;
     margin-top: 30px;
     color: gray;
 }
-.categories h1{
+
+.categories h1 {
     border-bottom: 1px solid gray;
 }
-.left_row{
+
+.left_row {
     float: left;
     margin-top: 30px;
 }
-.left_row a{
+
+.left_row a {
     color: rgb(238, 139, 73);
     text-decoration: none;
 }
-.left_row img{
+
+.left_row img {
     float: left;
 }
-.categories a{
-    color:gray;
+
+.categories a {
+    color: gray;
     text-decoration: none;
     list-style: none;
     margin-left: 20px;
     float: left;
     margin-top: 10px;
 }
-.categories i{
-    color: rgb(238, 139, 73) ;
+
+.categories i {
+    color: rgb(238, 139, 73);
 }
 
-.categories ul li{
-    border-bottom: 1px dotted  rgb(238, 139, 73);
+.categories ul li {
+    border-bottom: 1px dotted rgb(238, 139, 73);
 }
-footer{
+
+footer {
     /* height: 50px; */
     background-color: black;
     color: gray;
-    padding-top: 20px;
-    padding-left: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 428px) {
+    header {
+        width: 225%;
+    }
+    header h1,
+    p {
+        text-align: center;
+        padding-left: 0;
+    }
+    .nav {
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .nav ul li {
+        margin-left: 71px;
+        font-size: 21px;
+    }
+    footer {
+        width: 225%;
+        padding: 21px 0;
+    }
+    .rect {
+        width: 208px;
+        margin-left: 15px;
+    }
+    .container {
+        width: 963px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    header {
+        width: 125%;
+    }
+    header h1 {
+        padding-left: 0;
+        text-align: center;
+    }
+    header p {
+        padding-left: 0;
+        text-align: center;
+    }
+    .nav {
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .nav ul li {
+        margin-left: 90px;
+    }
+    .rect {
+        margin-left: 10px;
+    }
+    .para p {
+        width: 95%;
+    }
+    .container {
+        width: 952px;
+    }
+    footer {
+        width: 120%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .nav {
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .nav ul li {
+        margin-left: 85px;
+    }
+    header h1 {
+        padding-left: 0;
+        text-align: center;
+    }
+    header p {
+        padding-left: 0;
+        text-align: center;
+    }
 }
